@@ -610,13 +610,13 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	z-index: 3;
-	grid-column: 1/2;
+	z-index: 5;
+	grid-column: 1/3;
 	justify-content: space-between;
 	justify-self: end;
 	align-items: center;
 	align-self: flex-end;
-	max-width: 255px;
+	width: 255px;
 	height: 40px;
 	margin-bottom: 10px;
 	margin-top: 30px;
@@ -677,19 +677,21 @@
 	display: none;
 	flex-direction: column;
 	width: 100%;
+	height: fit-content;
 	color: #fff;
 	margin-top: 23px;
-	padding: 11px 20px;
+	padding: 15px 20px;
 	border-radius: 10px;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.8);
 	backdrop-filter: blur(10px);
 	line-height: 24px;
 	@media (max-width: 710px) {
-		width: 100%;
+		width: 257px;
 		padding: 20px 0;
 		justify-content: start;
 		align-items: start;
-		margin-bottom: 20px;
+		margin: 20px 0;
+		background: rgb(0, 0, 0, 0.3);
 	}
 
 	li {
@@ -914,10 +916,6 @@ input[type="range"]::-moz-range-thumb {
 	pointer-events: auto;
 }
 
-.fst__price {
-}
-.scnd__price {
-}
 .filter__flower {
 	display: flex;
 	flex-direction: column;
