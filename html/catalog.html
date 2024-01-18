@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Css-->
+	<link rel="stylesheet" href="../css/catalog_style.css">
+	<!--FontAwesome-->
+	<link rel="stylesheet" href="../libs/fontawesome/css/all.css">
+
+	<title>Каталог</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!--Header-->
+		<header class="header ">
+			<div class="header__row content">
+				<div class="header__top">
+
+					<img class="header__img1" src="../img/catalog/image128.png" alt="img1">
+					<img class="header__img2" src="../img/catalog/image129.png" alt="img2">
+					<div class="header__ellipse1"></div>
+					<div class="header__ellipse2"></div>
+					<div class="header__ellipse3"></div>
+					<div class="header__ellipse4"></div>
+
+					<!--Menu-->
+					<nav class="menu">
+						<div class="menu__btn"><i id="burger" class="fa-solid fa-bars"></i></div>
+						<ul class="menu__list">
+							<li><a href="../index.html"><img src="../img/logos/menu_logo.png" alt=""></a></li>
+							<li class="menu__item" id="catalog">Каталог
+								<!--Sub menu-->
+								<ul class="sub__menu">
+									<li class="sub__item"> <a href="">Популярне</a></li>
+									<li class="sub__item"> <a href="">Збірні букети</a></li>
+									<li class="sub__item"> <a href="">Монобукети</a></li>
+									<li class="sub__item"> <a href="">Троянди</a></li>
+									<li class="sub__item"> <a href="">Весільні</a></li>
+									<li class="sub__item"> <a href="">Композиції з квітів</a></li>
+									<li class="sub__item"> <a href="">Інтер'єрні композиції</a></li>
+									<li class="sub__item"> <a href="">Осінні</a></li>
+									<li class="sub__item"> <a href="">Індивідуальні букети</a></li>
+									<li class="sub__item"> <a href="">Сухоцвіти</a></li>
+									<li class="sub__item"> <a href="">Горщикові</a></li>
+									<li class="sub__item"> <a href="">Додатково</a></li>
+								</ul>
+							</li>
+							<li class="menu__item">Доставка оплата</li>
+							<li class="menu__item">Про нас</li>
+							<li class="menu__item">Контакти</li>
+							<li class="menu__item">FAQ</li>
+							<li class="menu__item"><i class="fa-solid fa-magnifying-glass menu__item"></i>Пошук
+							</li>
+						</ul>
+					</nav>
+
+					<!--Текстовый блок-->
+					<div class="header__text-block">
+						<div class="site__location"><a href="../index.html">Головна</a> / <a href="catalog.html">Каталог</a>
+						</div>
+
+						<!--Header-Board-->
+						<div class="header__board">
+							<h1 class="header__title big__title">
+								<span>Каталог</span>
+								<span>Букетів
+									<div class="header__subtitle">В нашому магазині найбільший вибір букетів для будь-яких подій:
+									</div>
+								</span>
+							</h1>
+
+							<!--Список категорий-->
+							<ul class="header__category">
+								<li class="board__li">букети з гіпсофіл</li>
+								<li class="board__li">букети з ромашек</li>
+								<li class="board__li">букети з хризантем</li>
+								<li class="board__li">кімнатні горщикові квіти</li>
+								<li class="board__li">монобукети</li>
+								<li class="board__li">збірні букети</li>
+								<li class="board__li">святковий букет</li>
+								<li class="board__li">композиції з квітів</li>
+								<li class="board__li">конверти</li>
+								<li class="board__li">листівки</li>
+								<li class="board__li">подарунки</li>
+								<li class="board__li">букети з сухоцвіту</li>
+								<li class="board__li">кульки</li>
+								<li class="board__li">популярне</li>
+								<li class="board__li">букети троянд</li>
+								<li class="board__li">квіти на похорони</li>
+								<li class="board__li">упакування подарунків</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--Блок адрес-->
+					<div class="header__address">
+						<div class="address__t">
+							<div class="address__title">flowers@gmail.com</div>
+							<div class="address__text">Доставка 24/7 за домовленністю з оператором</div>
+						</div>
+						<div class="address__b">
+							<div class="address__title">вул.Смілянська 1</div>
+							<div class="address__text">
+								<p>10:00-21:00</p>
+								<p>Без вихідних</p>
+							</div>
+						</div>
+						<div class="address__icons">
+							<i class="fa-brands fa-instagram" style="color: #43FFD2"></i>
+							<i class="fa-brands fa-viber" style="color: #43FFD2"></i>
+							<i class="fa-solid fa-phone-volume" style="color: #43FFD2"></i>
+						</div>
+						<div class="address__contacts">
+							<div class="address__phone">+380 (98)-111-22-33</div>
+							<div class="address__call"><i class="fa-solid fa-phone" style="color:#43FFD2"></i> Замовити дзвінок
+							</div>
+							<div class="cart__shopping"><i class="fa-solid fa-cart-shopping" style="color:#43FFD2"></i></div>
+						</div>
+					</div>
+				</div>
+
+				<!--Область Сортировка, Фильтр и Каталог товаров-->
+				<section class="catalog__goods">
+					<!--Сортировка товаров-->
+					<div class="sort__list">
+						<!--Первая строка, кнопка сортировки-->
+						<div class="main__sort">
+							<span>Популярне</span>
+							<span>▾</span>
+						</div>
+						<ul class="sort">
+							<li class="sort__item">Популярне</li>
+							<li class="sort__item">Новинки</li>
+							<li class="sort__item">Від дешевшого до дорожчого</li>
+							<li class="sort__item">Від дорожчого до дешевшого</li>
+						</ul>
+					</div>
+
+					<!--Панель Фильтр товаров-->
+					<section class="filter__goods">
+						<div class="filter__open">
+							<span>Фільтр товарів</span>
+							<span>▾</span>
+						</div>
+						<div class="filter__area">
+							<!--За світлом-->
+							<div class="light__block">
+								<h4 class="filter__title">За світлом</h4>
+								<!--Пункти-->
+								<label for="ch1">
+									<input type="checkbox" id="ch1" />Ніжні
+								</label>
+								<label for="ch2">
+									<input type="checkbox" id="ch2" />
+									Яскраві</label>
+							</div>
+							<!--За кольором-->
+							<div class="color__block">
+								<h4 class="filter__title">За кольором</h4>
+								<!--Пункти-->
+								<label for="ch3"><input type="checkbox" id="ch3" />
+									Білий</label>
+								<label for="ch4"><input type="checkbox" id="ch4" />
+									Жовтий</label>
+								<label for="ch5"><input type="checkbox" id="ch5" />
+									Червоний</label>
+								<label for="ch6"><input type="checkbox" id="ch6" />
+									Зелений</label>
+								<label for="ch7"><input type="checkbox" id="ch7" />
+									Помаранчовий</label>
+								<label for="ch8"><input type="checkbox" id="ch8" />
+									Рожевий</label>
+								<label for="ch9"><input type="checkbox" id="ch9" />
+									Синій</label>
+							</div>
+							<!--За форматом-->
+							<div class="format__block">
+								<h4 class="filter__title">За форматом</h4>
+								<label for="ch10"><input type="checkbox" id="ch10" />
+									Букет</label>
+								<label for="ch11"><input type="checkbox" id="ch11" />
+									У вазі</label>
+								<label for="ch12"><input type="checkbox" id="ch12" />
+									У конверті</label>
+								<label for="ch13"><input type="checkbox" id="ch13" />
+									У корзині</label>
+								<label for="ch14"><input type="checkbox" id="ch14" />
+									У капелюшній коробці</label>
+								<label for="ch15"><input type="checkbox" id="ch15" />
+									У ящику</label>
+							</div>
+
+							<!--Вартість-->
+							<div class="filter__price">
+								<h4 class="filter__title">Вартість</h4>
+
+								<!--Slider-->
+								<div class="slider">
+									<div class="progress"></div>
+								</div>
+
+								<!--Range-input-->
+								<div class="range-input">
+									<input type="range" class="range-min" min="0" max="1300" value="50">
+									<input type="range" class="range-max" min="0" max="1300" value="1250">
+								</div>
+
+								<!--Price input-->
+								<div class="price-input">
+									<!--Field min-->
+									<div class="field">
+										<input type="number" name="mn" class="input-min" value="50">
+									</div>
+									<div class="separator">-</div>
+									<!--Field Max-->
+									<div class="field">
+										<input type="number" name="mx" class="input-max" value="1250">
+									</div>
+								</div>
+
+							</div>
+
+
+							<!--За квіткою-->
+							<div class="filter__flower">
+								<h4 class="filter__title">За квіткою</h4>
+								<label for="ch16"><input type="checkbox" id="ch16" />
+									Альстремерія</label>
+								<label for="ch17"><input type="checkbox" id="ch17" />
+									Антуріум</label>
+								<label for="ch18"><input type="checkbox" id="ch18" />
+									Холодок лікарський</label>
+								<label for="ch19"><input type="checkbox" id="ch19" />
+									Астильба</label>
+								<label for="ch20"><input type="checkbox" id="ch20" />
+									Астранція</label>
+							</div>
+						</div>
+					</section>
+
+					<!--Товары/карточки-->
+					<section class="goods__area">
+						<!--Item 1-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="new">NEW</div>
+								<img src="../img/catalog/goods/image 114.png" alt="1" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 2-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<img src="../img/catalog/goods/image 130.png" alt="2" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">350 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 3-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="sale">SALE</div>
+								<img src="../img/catalog/goods/image 131.png" alt="3" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 4-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="new">NEW</div>
+								<img src="../img/catalog/goods/image 132.png" alt="4" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 5-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<img src="../img/catalog/goods/image 133.png" alt="5" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 6-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="new">NEW</div>
+								<img src="../img/catalog/goods/image 134.png" alt="1" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 7-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<img src="../img/catalog/goods/image 135.png" alt="2" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">350 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 8-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="sale">SALE</div>
+								<img src="../img/catalog/goods/image 136.png" alt="3" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 9-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="new">NEW</div>
+								<img src="../img/catalog/goods/image 137.png" alt="4" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 10-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<img src="../img/catalog/goods/image 138.png" alt="2" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">350 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 11-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="sale">SALE</div>
+								<img src="../img/catalog/goods/image 139.png" alt="3" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+						<!--Item 12-->
+						<div class="buket__item">
+							<div class="buket__item-row">
+								<div class="new">NEW</div>
+								<img src="../img/catalog/goods/image 140.png" alt="4" class="buket__img">
+								<div class="buket__cart-title">Кращий день</div>
+								<div class="buket__price">300 грн</div>
+								<button class="buy__item">Додати в кошик</button>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+			</div>
+		</header>
+
+
+
+		<script src="../js/catalog.js"></script>
+</body>
+
+</html>
