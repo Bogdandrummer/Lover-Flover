@@ -12,11 +12,19 @@
 .content {
 	display: flex;
 	max-width: 1440px;
+	width: 100%;
+	min-width: 400px;
 	height: auto;
 	padding: 0 165px;
 	margin: 0 auto;
 	overflow: hidden;
 	box-sizing: border-box;
+	@media screen and (max-width: 1200px) {
+		padding: 0 100px;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 0 30px;
+	}
 }
 
 .hidden {
@@ -659,6 +667,7 @@
 	padding-top: 10px;
 	align-self: center;
 	justify-content: space-between;
+	letter-spacing: 1.6px;
 	@media (max-width: 710px) {
 		padding: 0;
 		font-size: 16px;
@@ -925,11 +934,11 @@ input[type="range"]::-moz-range-thumb {
 .goods__area {
 	display: grid;
 	box-sizing: border-box;
-	grid-template-columns: repeat(3, minmax(100px, calc(100% / 3)));
+	grid-template-columns: repeat(3, minmax(200px, calc(100% / 3)));
 	grid-template-rows: repeat(3, auto);
 	gap: 30px;
-	@media (max-width: 997px) {
-		grid-template-columns: repeat(2, minmax(100px, calc(100% / 2)));
+	@media (max-width: 1200px) {
+		grid-template-columns: repeat(2, minmax(200px, calc(100% / 2)));
 		grid-template-rows: repeat(4, auto);
 		column-gap: 10px;
 		row-gap: 30px;
@@ -940,8 +949,9 @@ input[type="range"]::-moz-range-thumb {
 		grid-auto-rows: none;
 		grid-column: 1;
 		grid-row: 3;
-		column-width: 100%;
+		column-width: 250px;
 		column-gap: none;
+		justify-self: center;
 	}
 }
 
@@ -971,6 +981,7 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 710px) {
 	.buket__item-row {
 		min-width: none;
+		width: 250px;
 	}
 	.buket__item {
 		min-width: 100%;
