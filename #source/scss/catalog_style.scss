@@ -118,8 +118,7 @@
 .header__ellipse6 {
 	position: absolute;
 	z-index: 0;
-	top: 1900px;
-	border: 1px solid red;
+	top: 95%;
 	left: -5%;
 	width: 99.587px;
 	height: 211.054px;
@@ -130,10 +129,29 @@
 .header__ellipse7 {
 	position: absolute;
 	z-index: 0;
+	top: 98%;
+	left: 30%;
+	width: 879.44px;
+	height: 211.054px;
+	transform: rotate(21.097deg);
+	border-radius: 879.44px;
+	background: #43ffd2;
+	filter: blur(125px);
 }
 .header__ellipse8 {
 	position: absolute;
-	z-index: 0;
+	z-index: 1;
+	top: 95%;
+	right: 0;
+	width: 354.93px;
+	height: 364.216px;
+	transform: rotate(32.828deg);
+	fill: #7d2253;
+	filter: blur(125px);
+}
+.header__ellipse9 {
+}
+.header__ellipse10 {
 }
 //Адаптив Wrapper, Content и Header
 @media screen and (max-width: 997px) {
@@ -166,7 +184,7 @@
 .menu {
 	max-width: 715px;
 	position: relative;
-	z-index: 5;
+	z-index: 10;
 	flex: 0 1 100%;
 	height: 80px;
 }
@@ -183,7 +201,9 @@
 	letter-spacing: 0.04em;
 	li {
 		min-width: 90px;
+		width: auto-fit;
 		padding-left: 15px;
+		cursor: pointer;
 	}
 	span {
 		margin-left: 12px;
@@ -963,6 +983,28 @@ input[type="range"]::-moz-range-thumb {
 .filter__flower {
 	display: flex;
 	flex-direction: column;
+}
+
+.reset__form-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	margin-top: 20px;
+	font-family: oswald;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #fff;
+	transition: 150ms all ease-in;
+	&:hover {
+		border: 1px solid #43ffd2;
+		color: #43ffd2;
+		transition: 150ms all ease-in;
+	}
 }
 
 //Товары/Карточки
