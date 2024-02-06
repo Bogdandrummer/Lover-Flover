@@ -536,6 +536,10 @@ h6 {
   padding-left: 15px;
   cursor: pointer;
 }
+.menu__list a {
+  text-decoration: none;
+  color: #fff;
+}
 .menu__list span {
   margin-left: 12px;
 }

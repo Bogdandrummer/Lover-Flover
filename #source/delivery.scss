@@ -1,0 +1,42 @@
+@import "null";
+@import "fonts";
+@import "footer";
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	box-sizing: border-box;
+	background: #040a0a;
+	min-width: 400px;
+}
+.content {
+	display: flex;
+	max-width: 1440px;
+	width: 100%;
+	min-width: 400px;
+	height: auto;
+	padding: 0 165px;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+	@media screen and (max-width: 1200px) {
+		padding: 0 100px;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 0 30px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+//Header
+.header__row {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 50px;
+}
