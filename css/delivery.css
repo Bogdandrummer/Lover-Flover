@@ -347,6 +347,7 @@ h6 {
 .menu__list {
   display: flex;
   flex: 1 1 100%;
+  max-width: 700px;
   height: 70px;
   justify-content: space-around;
   align-items: center;
@@ -356,7 +357,7 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
-.menu__list li {
+.menu__list > li {
   min-width: 90px;
   width: auto-fit;
   padding-left: 15px;
@@ -397,6 +398,26 @@ h6 {
   transition: 150ms all;
   color: #43ffd2;
   text-decoration: underline;
+}
+
+.num__recycl {
+  display: flex;
+  flex: 1 1 100%;
+  justify-self: self-end;
+  color: rgb(67, 255, 210);
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 10%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.menu__phone {
+  display: flex;
+  width: auto-fit;
+  min-width: 90px;
 }
 
 .sub__menu {
