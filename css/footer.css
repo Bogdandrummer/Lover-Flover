@@ -9,6 +9,7 @@
   height: 337px;
   justify-content: space-between;
   padding-top: 30px;
+  column-gap: 20px;
 }
 .footer__row li {
   margin-bottom: 4px;

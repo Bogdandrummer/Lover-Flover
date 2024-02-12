@@ -22,11 +22,6 @@ burger.addEventListener('click', function (e) {
 		menuList.style.display = '';
 	}
 
-	if (headerAddress.style.display === '') {
-		headerAddress.style.display = 'block';
-	} else if (headerAddress.style.display === 'block') {
-		headerAddress.style.display = '';
-	}
 });
 
 //Закрытие меню когда курсор покидает пределы меню
